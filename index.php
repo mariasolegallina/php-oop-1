@@ -22,6 +22,7 @@ require 'db.php';
             <tr>
                 <th scope="col">Titolo</th>
                 <th scope="col">Durata</th>
+                <th scope="col">Genere</th>
                 <th scope="col">Anno di uscita</th>
                 <th scope="col">Cast</th>
                 <th scope="col">Regista</th>
@@ -34,6 +35,7 @@ require 'db.php';
                     <tr>
                         <td>" . $movie->title . "</td>
                         <td>" . $movie->duration . " min.</td>
+                        <td>" . $movie->genre . "</td>
                         <td>" . $movie->year . "</td>
                         <td>" . $movie->cast . "</td>
                         <td>" . $movie->director . "</td>
