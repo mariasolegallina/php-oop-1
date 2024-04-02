@@ -27,4 +27,4 @@ Fate della composizione creando una nuova classe Director, questa classe gestir√
 nome
 cognome
 nazionalit√†
-Fate quindi in modo che il movie possa avere un nuovo attributo "$director" di classe Director e che sia richiesto dal costructor (modificato)
+Fate quindi in modo che il movie possa avere un nuovo attributo "$director" di classe Director e che sia richiesto dal costructor
