@@ -1,5 +1,6 @@
 <?php
 require './Models/Movie.php';
+require './Models/Director.php';
 
 // instances of Movie
 $movie1 = new Movie("Poor things", 141, "Comedy/Sci-fi", 2023, "Emma Stone, Mark Ruffalo, Willem Dafoe", "Yorgos Lanthimos");
