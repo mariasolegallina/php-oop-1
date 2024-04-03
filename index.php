@@ -16,22 +16,22 @@ require 'db.php';
 </head>
 
 <body>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Titolo</th>
-                <th scope="col">Durata</th>
-                <th scope="col">Genere</th>
-                <th scope="col">Anno di uscita</th>
-                <th scope="col">Cast</th>
-                <th scope="col">Regista</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            foreach ($movies as $movie) {
-                echo "
+    <div class="container py-5">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Titolo</th>
+                    <th scope="col">Durata</th>
+                    <th scope="col">Genere</th>
+                    <th scope="col">Anno di uscita</th>
+                    <th scope="col">Cast</th>
+                    <th scope="col">Regista</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach ($movies as $movie) {
+                    echo "
                     <tr>
                         <td>" . $movie->title . "</td>
                         <td>" . $movie->duration . " min.</td>
@@ -41,11 +41,12 @@ require 'db.php';
                         <td>" . $movie->director . "</td>
                         </tr>
                         ";
-            } ?>
+                } ?>
 
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
